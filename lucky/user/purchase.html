@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Purchase</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h2>Purchase</h2>
+  <p>Total: Rs. 800</p>
+  <button onclick="payNow()">Pay Now</button>
+  <p id="status"></p>
+
+  <script>
+    function payNow() {
+      document.getElementById("status").innerText = "Payment Successful. Invoice Generated.";
+      setTimeout(() => {
+        window.location.href = "invoice.html";
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
